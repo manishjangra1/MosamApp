@@ -64,7 +64,10 @@ public class MainActivity extends AppCompatActivity {
                 String city = editText.getText().toString();
                 try {
                     if (!city.isEmpty()){
-                        url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=a17dda8c4f6f3cbf88e38fb38ccfa40e";
+
+// -----------> Below line of code will not workk if you will not enter your api_key there. So do paste api_key below
+                        
+                        url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid={ Enter your own api_key here}";
                     }else {
                         Toast.makeText(MainActivity.this, "Enter City Name First", Toast.LENGTH_SHORT).show();
                     }
